@@ -1,0 +1,16 @@
+.elem{
+    align-items: center;
+    justify-content:  center;
+    display: flex;
+    padding: 6%;
+
+}
+
+.first{
+
+    background-color: black;
+    align-items: center;
+    justify-content:  center;
+    display: flex;
+    height: 100vh;
+}
