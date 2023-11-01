@@ -3,7 +3,7 @@ import { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios'
 import design from '../Employes.module.css'
-import {Reset} from '../logs/LoginValidation';
+import {Reset} from '../signup-in/LoginValidation';
 
 
 

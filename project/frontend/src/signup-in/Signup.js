@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import Validation from '../logs/SignupValidation';
+import Validation from '../signup-in/SignupValidation';
 import axios from 'axios'
 import { GoogleLogin } from 'react-google-login';
 import design from '../Employes.module.css'

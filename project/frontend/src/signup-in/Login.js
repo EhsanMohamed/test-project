@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Validation } from '../logs/LoginValidation';
+import { Validation } from '../signup-in/LoginValidation';
 import { GoogleLogin } from 'react-google-login';
 import design from '../Employes.module.css';
 import { gapi } from "gapi-script";

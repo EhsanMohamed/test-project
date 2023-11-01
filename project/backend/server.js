@@ -493,6 +493,23 @@ app.get("/admin", (req, res) => {
 
 })
 
+
+app.get('/dashboard', (req, res) => {
+
+    const sql= "SELECT ID,name,(SELECT COUNT(*) FROM employes_data WHERE user_ID = user.ID ) AS add_by FROM user"
+    
+ 
+    db.query(sql, (err, data) => {
+         if (err) {
+             return res.json(" Error ")
+         }
+         else {
+             return res.json(data)
+         }
+ 
+     })
+ })
+
 //Department
 
 app.post('/department', (req, res) => {
@@ -520,9 +537,10 @@ app.post('/department', (req, res) => {
 
 app.get('/department', (req, res) => {
 
-    const sql = "select * from employes_department ";
+   const sql= "SELECT ID,name,(SELECT COUNT(*) FROM employes_data WHERE employes_department_id = employes_department.ID ) AS employees FROM employes_department"
+   
 
-    db.query(sql, (err, data) => {
+   db.query(sql, (err, data) => {
         if (err) {
             return res.json(" Error ")
         }
@@ -582,7 +600,7 @@ app.put('/userPh', upload.single('img'), (req, res) => {
 
 })
 
-
+ 
 app.put('/log', (req, res) => {
 
     const sql = 'SELECT name,img  FROM user WHERE `email` = ? ';

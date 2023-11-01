@@ -1,5 +1,5 @@
 import { BiArrowBack } from "react-icons/bi";
-import { Reset } from './logs/LoginValidation';
+import { Reset } from './signup-in/LoginValidation';
 import React from 'react'
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";

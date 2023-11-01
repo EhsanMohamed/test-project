@@ -3,7 +3,7 @@ import employescss from './Employes.module.css'
 import { EditName, EditPassword, EditImage } from './EditInfo';
 import { BiSolidEditAlt } from "react-icons/bi";
 import { RiLockPasswordFill } from "react-icons/ri"
-
+ 
 
 function Profile() {
 
